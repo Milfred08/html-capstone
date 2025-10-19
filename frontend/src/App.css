@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced Repository Demo Styles */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* SOAP section highlighting */
+.soap-subjective {
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+}
+
+.soap-objective {
+  border-left: 4px solid #10b981;
+  background-color: #ecfdf5;
+}
+
+.soap-assessment {
+  border-left: 4px solid #f59e0b;
+  background-color: #fffbeb;
+}
+
+.soap-plan {
+  border-left: 4px solid #ef4444;
+  background-color: #fef2f2;
+}
+
+/* Enhanced card hover effects */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Repository pattern demonstration */
+.repo-comparison {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Performance metrics styling */
+.performance-metric {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.performance-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
